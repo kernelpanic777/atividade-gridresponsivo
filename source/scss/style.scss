@@ -1,0 +1,80 @@
+*{
+	box-sizing: border-box;
+}
+
+.item{
+	background-color: blue;
+}
+
+.container{
+	width:  100%;
+	margin:0 auto;
+}
+
+.col{
+	position: relative;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-1{
+	width: 8.333%;
+}
+
+@media (max-width:480px) {
+	.item{
+		background-color: red;
+	}
+	.col-1{
+		width: 100%;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	.item{
+		background-color: green;
+	}
+}
+
+
+
+/*
+
+unidade/total*100 (Regra para achar a porcentagem da coluna).
+	total = máximo de colunas definidas para toda página.
+	unidade = quantas colunas utilizar na classe
+
+.col-2{
+	width: 16.666%;
+}
+.col-3{
+	width: 25%;
+}
+.col-4{
+	width: 33.333%;
+}
+.col-5{
+	width: 41.666%;
+}
+.col-6{
+	width: 50%;
+}
+.col-7{
+	width: 58.333%;
+}
+.col-8{
+	width: 66.666%;
+}
+.col-9{
+	width: 75%;
+}
+.col-10{
+	width: 83.333%;
+}
+.col-11{
+	width: 91.666%;
+}
+.col-12{
+	width: 100%;
+}
+*/
